@@ -12,12 +12,8 @@
 		69F28D442AC0CF6E002F8B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D422AC0CF6E002F8B56 /* Main.storyboard */; };
 		69F28D472AC0CF6E002F8B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D452AC0CF6E002F8B56 /* LaunchScreen.storyboard */; };
 		69F28D692AC0CF6E002F8B56 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D342AC0CF6C002F8B56 /* GameScene.sks */; };
-		69F28D6A2AC0CF6E002F8B56 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D342AC0CF6C002F8B56 /* GameScene.sks */; };
-		69F28D6B2AC0CF6E002F8B56 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D342AC0CF6C002F8B56 /* GameScene.sks */; };
 		69F28D6C2AC0CF6E002F8B56 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F28D352AC0CF6C002F8B56 /* GameScene.swift */; };
 		69F28D6F2AC0CF6E002F8B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D362AC0CF6E002F8B56 /* Assets.xcassets */; };
-		69F28D702AC0CF6E002F8B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D362AC0CF6E002F8B56 /* Assets.xcassets */; };
-		69F28D712AC0CF6E002F8B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D362AC0CF6E002F8B56 /* Assets.xcassets */; };
 		69F28D832AC0F106002F8B56 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D7E2AC0F106002F8B56 /* spark.png */; };
 		69F28D842AC0F106002F8B56 /* PlayerExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D7F2AC0F106002F8B56 /* PlayerExplosion.sks */; };
 		69F28D852AC0F106002F8B56 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D802AC0F106002F8B56 /* coin.wav */; };
@@ -34,8 +30,6 @@
 		69F28D402AC0CF6E002F8B56 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		69F28D432AC0CF6E002F8B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69F28D462AC0CF6E002F8B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		69F28D4C2AC0CF6E002F8B56 /* MotorRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotorRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		69F28D5C2AC0CF6E002F8B56 /* MotorRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotorRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F28D7E2AC0F106002F8B56 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = "../../Swift/HackingWithSwift/Classic/project36-files/spark.png"; sourceTree = "<group>"; };
 		69F28D7F2AC0F106002F8B56 /* PlayerExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = PlayerExplosion.sks; path = "../../Swift/HackingWithSwift/Classic/project36-files/PlayerExplosion.sks"; sourceTree = "<group>"; };
 		69F28D802AC0F106002F8B56 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = coin.wav; path = "../../Swift/HackingWithSwift/Classic/project36-files/coin.wav"; sourceTree = "<group>"; };
@@ -45,20 +39,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		69F28D382AC0CF6E002F8B56 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69F28D492AC0CF6E002F8B56 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69F28D592AC0CF6E002F8B56 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,8 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				69F28D3B2AC0CF6E002F8B56 /* MotorRun.app */,
-				69F28D4C2AC0CF6E002F8B56 /* MotorRun.app */,
-				69F28D5C2AC0CF6E002F8B56 /* MotorRun.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,40 +103,6 @@
 			productReference = 69F28D3B2AC0CF6E002F8B56 /* MotorRun.app */;
 			productType = "com.apple.product-type.application";
 		};
-		69F28D4B2AC0CF6E002F8B56 /* MotorRun tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 69F28D772AC0CF6E002F8B56 /* Build configuration list for PBXNativeTarget "MotorRun tvOS" */;
-			buildPhases = (
-				69F28D482AC0CF6E002F8B56 /* Sources */,
-				69F28D492AC0CF6E002F8B56 /* Frameworks */,
-				69F28D4A2AC0CF6E002F8B56 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "MotorRun tvOS";
-			productName = "MotorRun tvOS";
-			productReference = 69F28D4C2AC0CF6E002F8B56 /* MotorRun.app */;
-			productType = "com.apple.product-type.application";
-		};
-		69F28D5B2AC0CF6E002F8B56 /* MotorRun macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 69F28D7A2AC0CF6E002F8B56 /* Build configuration list for PBXNativeTarget "MotorRun macOS" */;
-			buildPhases = (
-				69F28D582AC0CF6E002F8B56 /* Sources */,
-				69F28D592AC0CF6E002F8B56 /* Frameworks */,
-				69F28D5A2AC0CF6E002F8B56 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "MotorRun macOS";
-			productName = "MotorRun macOS";
-			productReference = 69F28D5C2AC0CF6E002F8B56 /* MotorRun.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,12 +114,6 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					69F28D3A2AC0CF6E002F8B56 = {
-						CreatedOnToolsVersion = 14.3.1;
-					};
-					69F28D4B2AC0CF6E002F8B56 = {
-						CreatedOnToolsVersion = 14.3.1;
-					};
-					69F28D5B2AC0CF6E002F8B56 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -194,8 +132,6 @@
 			projectRoot = "";
 			targets = (
 				69F28D3A2AC0CF6E002F8B56 /* MotorRun iOS */,
-				69F28D4B2AC0CF6E002F8B56 /* MotorRun tvOS */,
-				69F28D5B2AC0CF6E002F8B56 /* MotorRun macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -217,24 +153,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69F28D4A2AC0CF6E002F8B56 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69F28D6A2AC0CF6E002F8B56 /* GameScene.sks in Resources */,
-				69F28D702AC0CF6E002F8B56 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69F28D5A2AC0CF6E002F8B56 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69F28D6B2AC0CF6E002F8B56 /* GameScene.sks in Resources */,
-				69F28D712AC0CF6E002F8B56 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -245,20 +163,6 @@
 				69F28D6C2AC0CF6E002F8B56 /* GameScene.swift in Sources */,
 				69F28D412AC0CF6E002F8B56 /* GameViewController.swift in Sources */,
 				69F28D3F2AC0CF6E002F8B56 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69F28D482AC0CF6E002F8B56 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69F28D582AC0CF6E002F8B56 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,119 +364,6 @@
 			};
 			name = Release;
 		};
-		69F28D782AC0CF6E002F8B56 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WXWQYNX7C7;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = codingKam.MotorRun;
-				PRODUCT_NAME = MotorRun;
-				SDKROOT = appletvos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 16.4;
-			};
-			name = Debug;
-		};
-		69F28D792AC0CF6E002F8B56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WXWQYNX7C7;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = codingKam.MotorRun;
-				PRODUCT_NAME = MotorRun;
-				SDKROOT = appletvos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 16.4;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		69F28D7B2AC0CF6E002F8B56 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "MotorRun macOS/MotorRun_macOS.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WXWQYNX7C7;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = codingKam.MotorRun;
-				PRODUCT_NAME = MotorRun;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		69F28D7C2AC0CF6E002F8B56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "MotorRun macOS/MotorRun_macOS.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WXWQYNX7C7;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = codingKam.MotorRun;
-				PRODUCT_NAME = MotorRun;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -590,24 +381,6 @@
 			buildConfigurations = (
 				69F28D752AC0CF6E002F8B56 /* Debug */,
 				69F28D762AC0CF6E002F8B56 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		69F28D772AC0CF6E002F8B56 /* Build configuration list for PBXNativeTarget "MotorRun tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69F28D782AC0CF6E002F8B56 /* Debug */,
-				69F28D792AC0CF6E002F8B56 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		69F28D7A2AC0CF6E002F8B56 /* Build configuration list for PBXNativeTarget "MotorRun macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69F28D7B2AC0CF6E002F8B56 /* Debug */,
-				69F28D7C2AC0CF6E002F8B56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
