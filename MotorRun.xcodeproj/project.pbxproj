@@ -11,13 +11,6 @@
 		69F28D412AC0CF6E002F8B56 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F28D402AC0CF6E002F8B56 /* GameViewController.swift */; };
 		69F28D442AC0CF6E002F8B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D422AC0CF6E002F8B56 /* Main.storyboard */; };
 		69F28D472AC0CF6E002F8B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D452AC0CF6E002F8B56 /* LaunchScreen.storyboard */; };
-		69F28D4F2AC0CF6E002F8B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F28D4E2AC0CF6E002F8B56 /* AppDelegate.swift */; };
-		69F28D512AC0CF6E002F8B56 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F28D502AC0CF6E002F8B56 /* GameViewController.swift */; };
-		69F28D542AC0CF6E002F8B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D522AC0CF6E002F8B56 /* Main.storyboard */; };
-		69F28D572AC0CF6E002F8B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D552AC0CF6E002F8B56 /* LaunchScreen.storyboard */; };
-		69F28D5F2AC0CF6E002F8B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F28D5E2AC0CF6E002F8B56 /* AppDelegate.swift */; };
-		69F28D612AC0CF6E002F8B56 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F28D602AC0CF6E002F8B56 /* GameViewController.swift */; };
-		69F28D642AC0CF6E002F8B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D622AC0CF6E002F8B56 /* Main.storyboard */; };
 		69F28D692AC0CF6E002F8B56 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D342AC0CF6C002F8B56 /* GameScene.sks */; };
 		69F28D6A2AC0CF6E002F8B56 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D342AC0CF6C002F8B56 /* GameScene.sks */; };
 		69F28D6B2AC0CF6E002F8B56 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 69F28D342AC0CF6C002F8B56 /* GameScene.sks */; };
@@ -42,15 +35,7 @@
 		69F28D432AC0CF6E002F8B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69F28D462AC0CF6E002F8B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69F28D4C2AC0CF6E002F8B56 /* MotorRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotorRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		69F28D4E2AC0CF6E002F8B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69F28D502AC0CF6E002F8B56 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		69F28D532AC0CF6E002F8B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		69F28D562AC0CF6E002F8B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69F28D5C2AC0CF6E002F8B56 /* MotorRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotorRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		69F28D5E2AC0CF6E002F8B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69F28D602AC0CF6E002F8B56 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		69F28D632AC0CF6E002F8B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		69F28D652AC0CF6E002F8B56 /* MotorRun_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MotorRun_macOS.entitlements; sourceTree = "<group>"; };
 		69F28D7E2AC0F106002F8B56 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = "../../Swift/HackingWithSwift/Classic/project36-files/spark.png"; sourceTree = "<group>"; };
 		69F28D7F2AC0F106002F8B56 /* PlayerExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = PlayerExplosion.sks; path = "../../Swift/HackingWithSwift/Classic/project36-files/PlayerExplosion.sks"; sourceTree = "<group>"; };
 		69F28D802AC0F106002F8B56 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = coin.wav; path = "../../Swift/HackingWithSwift/Classic/project36-files/coin.wav"; sourceTree = "<group>"; };
@@ -87,22 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				69F28D7D2AC0F0CD002F8B56 /* Content */,
-				69F28D322AC0CF6C002F8B56 /* MotorRun Shared */,
-				69F28D3D2AC0CF6E002F8B56 /* MotorRun iOS */,
-				69F28D4D2AC0CF6E002F8B56 /* MotorRun tvOS */,
-				69F28D5D2AC0CF6E002F8B56 /* MotorRun macOS */,
 				69F28D3C2AC0CF6E002F8B56 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		69F28D322AC0CF6C002F8B56 /* MotorRun Shared */ = {
-			isa = PBXGroup;
-			children = (
-				69F28D342AC0CF6C002F8B56 /* GameScene.sks */,
-				69F28D352AC0CF6C002F8B56 /* GameScene.swift */,
-				69F28D362AC0CF6E002F8B56 /* Assets.xcassets */,
-			);
-			path = "MotorRun Shared";
 			sourceTree = "<group>";
 		};
 		69F28D3C2AC0CF6E002F8B56 /* Products */ = {
@@ -115,39 +86,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		69F28D3D2AC0CF6E002F8B56 /* MotorRun iOS */ = {
-			isa = PBXGroup;
-			children = (
-				69F28D3E2AC0CF6E002F8B56 /* AppDelegate.swift */,
-				69F28D402AC0CF6E002F8B56 /* GameViewController.swift */,
-				69F28D422AC0CF6E002F8B56 /* Main.storyboard */,
-				69F28D452AC0CF6E002F8B56 /* LaunchScreen.storyboard */,
-			);
-			path = "MotorRun iOS";
-			sourceTree = "<group>";
-		};
-		69F28D4D2AC0CF6E002F8B56 /* MotorRun tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				69F28D4E2AC0CF6E002F8B56 /* AppDelegate.swift */,
-				69F28D502AC0CF6E002F8B56 /* GameViewController.swift */,
-				69F28D522AC0CF6E002F8B56 /* Main.storyboard */,
-				69F28D552AC0CF6E002F8B56 /* LaunchScreen.storyboard */,
-			);
-			path = "MotorRun tvOS";
-			sourceTree = "<group>";
-		};
-		69F28D5D2AC0CF6E002F8B56 /* MotorRun macOS */ = {
-			isa = PBXGroup;
-			children = (
-				69F28D5E2AC0CF6E002F8B56 /* AppDelegate.swift */,
-				69F28D602AC0CF6E002F8B56 /* GameViewController.swift */,
-				69F28D622AC0CF6E002F8B56 /* Main.storyboard */,
-				69F28D652AC0CF6E002F8B56 /* MotorRun_macOS.entitlements */,
-			);
-			path = "MotorRun macOS";
-			sourceTree = "<group>";
-		};
 		69F28D7D2AC0F0CD002F8B56 /* Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +94,13 @@
 				69F28D822AC0F106002F8B56 /* music.m4a */,
 				69F28D7F2AC0F106002F8B56 /* PlayerExplosion.sks */,
 				69F28D7E2AC0F106002F8B56 /* spark.png */,
+				69F28D342AC0CF6C002F8B56 /* GameScene.sks */,
+				69F28D352AC0CF6C002F8B56 /* GameScene.swift */,
+				69F28D362AC0CF6E002F8B56 /* Assets.xcassets */,
+				69F28D3E2AC0CF6E002F8B56 /* AppDelegate.swift */,
+				69F28D402AC0CF6E002F8B56 /* GameViewController.swift */,
+				69F28D422AC0CF6E002F8B56 /* Main.storyboard */,
+				69F28D452AC0CF6E002F8B56 /* LaunchScreen.storyboard */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -277,8 +222,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				69F28D6A2AC0CF6E002F8B56 /* GameScene.sks in Resources */,
-				69F28D542AC0CF6E002F8B56 /* Main.storyboard in Resources */,
-				69F28D572AC0CF6E002F8B56 /* LaunchScreen.storyboard in Resources */,
 				69F28D702AC0CF6E002F8B56 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +230,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69F28D642AC0CF6E002F8B56 /* Main.storyboard in Resources */,
 				69F28D6B2AC0CF6E002F8B56 /* GameScene.sks in Resources */,
 				69F28D712AC0CF6E002F8B56 /* Assets.xcassets in Resources */,
 			);
@@ -310,8 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69F28D512AC0CF6E002F8B56 /* GameViewController.swift in Sources */,
-				69F28D4F2AC0CF6E002F8B56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,8 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69F28D612AC0CF6E002F8B56 /* GameViewController.swift in Sources */,
-				69F28D5F2AC0CF6E002F8B56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,30 +279,6 @@
 				69F28D462AC0CF6E002F8B56 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		69F28D522AC0CF6E002F8B56 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				69F28D532AC0CF6E002F8B56 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		69F28D552AC0CF6E002F8B56 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				69F28D562AC0CF6E002F8B56 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		69F28D622AC0CF6E002F8B56 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				69F28D632AC0CF6E002F8B56 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
