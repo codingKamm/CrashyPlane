@@ -17,7 +17,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var player: SKSpriteNode!
     var backgroundMusic: SKAudioNode!
+    
     var logo: SKSpriteNode!
+    let rockTexture = SKTexture(imageNamed: "rock")
+    var rockPhysics:  SKPhysicsBody!
+    let explosion = SKEmitterNode(fileNamed: "explosion")
     var gameOver: SKSpriteNode!
     var gameState = GameState.showingLogo
     var scoreLabel: SKLabelNode!
@@ -37,11 +41,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         physicsWorld.gravity = CGVector(dx: 0.0, dy: -5.0) // controls gravity
         physicsWorld.contactDelegate = self
+        rockPhysics = SKPhysicsBody(texture: rockTexture, size: rockTexture.size())
+        
+        if let musicURL = Bundle.main.url(forResource: "music", withExtension: "m4a") {
+            backgroundMusic = SKAudioNode(url: musicURL)
+            addChild(backgroundMusic)
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         switch gameState {
-        
         case .showingLogo:
             gameState = .playing
             
@@ -53,7 +62,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 self.startRocks()
             }
             
-            let sequence = SKAction.sequence([fadeOut, remove, wait, activatePlayer])
+            let sequence = SKAction.sequence([fadeOut, wait, activatePlayer, remove])
             logo.run(sequence)
             
             
@@ -65,15 +74,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             if let scene = SKScene(fileNamed: "GameScene") {
                 scene.scaleMode = .aspectFill
                 let transation = SKTransition.moveIn(with: SKTransitionDirection.right, duration: 1)
-                view?.presentScene(scene, transition: transation)
+                self.view?.presentScene(scene, transition: transation)
             }
         }
     }
     
     override func update(_ currentTime: TimeInterval) {
         guard player != nil else {return}
+        
         let value = player.physicsBody!.velocity.dy * 0.001
-        let rotate = SKAction.rotate(byAngle: value, duration: 0.1)
+        let rotate = SKAction.rotate(toAngle: value, duration: 0.1) // use byAngle params to rotate player
         
         player.run(rotate)
         
@@ -89,6 +99,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             let sound = SKAction.playSoundFileNamed("coin.wav", waitForCompletion: false)
             run(sound)
+            
+            score += 1
             
             return
         }
@@ -108,14 +120,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             gameOver.alpha = 1
             gameState = .gameOver
             backgroundMusic.run(SKAction.stop())
+           
             player.removeFromParent()
             speed = 0
         }
-        
-        if let musicURL = Bundle.main.url(forResource: "music", withExtension: "m4a") {
-            backgroundMusic = SKAudioNode(url: musicURL)
-            addChild(backgroundMusic)
-        }
+       
             
         
     }
@@ -124,7 +133,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let playerTexture = SKTexture(imageNamed: "player-1")
         player = SKSpriteNode(texture: playerTexture)
         player.zPosition = 10
-        player.position = CGPoint(x: frame.width/6, y: frame.height * 0.75)
+        player.position = CGPoint(x: frame.width / 6, y: frame.height * 0.75)
         
         addChild(player)
         
@@ -132,7 +141,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         player.physicsBody!.contactTestBitMask = player.physicsBody!.collisionBitMask
         player.physicsBody?.isDynamic = false
         
-         player.physicsBody?.collisionBitMask = 0 // commented out to allow plane to bounce of ground
+         player.physicsBody?.collisionBitMask = 0 // commented out to allow plane to bounce off of ground
         
         let frame2 = SKTexture(imageNamed: "player-2")
         let frame3 = SKTexture(imageNamed: "player-3")
@@ -155,8 +164,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(topSky)
         addChild(bottomSky)
         
-        topSky.zPosition = -40
         bottomSky.zPosition = -40
+        topSky.zPosition = -40
     }
     
     func createBackground() {
@@ -206,19 +215,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let rockTexture = SKTexture(imageNamed: "rock")
         
         let topRock = SKSpriteNode(texture: rockTexture)
-        topRock.physicsBody = SKPhysicsBody(texture: rockTexture, size: rockTexture.size())
+        topRock.physicsBody = rockPhysics.copy() as? SKPhysicsBody
         topRock.physicsBody?.isDynamic = false // rocks will not drop off of screen when false
         topRock.zRotation = .pi
-        topRock.xScale = -10
+        topRock.xScale = -1.0 //changes size of rock
         
         let bottomRock = SKSpriteNode(texture: rockTexture)
-        bottomRock.physicsBody = SKPhysicsBody(texture: rockTexture, size: rockTexture.size())
+        bottomRock.physicsBody = rockPhysics.copy() as? SKPhysicsBody
         bottomRock.physicsBody?.isDynamic = false
         topRock.zPosition = -20
         bottomRock.zPosition = -20
         
         //2
-        let rockCollision = SKSpriteNode(color: UIColor.clear, size: CGSize(width: 32, height: frame.height))
+        let rockCollision = SKSpriteNode(color: UIColor.clear, size: CGSize(width: 2, height: frame.height))
         rockCollision.physicsBody = SKPhysicsBody(rectangleOf: rockCollision.size)
         rockCollision.physicsBody?.isDynamic = false
         rockCollision.name = "scoreDetect"
