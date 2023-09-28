@@ -14,17 +14,17 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let scene = GameScene.newGameScene()
-        scene.scaleMode = .aspectFill
-
+        let scene = SKScene(fileNamed: "GameScene")
+        scene?.scaleMode = .aspectFill
+        
         // Present the scene
         let skView = self.view as! SKView
         skView.presentScene(scene)
         
         skView.ignoresSiblingOrder = true
-        skView.showsFPS = true
-        skView.showsNodeCount = true
-        skView.showsPhysics = true
+        skView.showsFPS = false
+        skView.showsNodeCount = false
+        skView.showsPhysics = false
         
     }
 
