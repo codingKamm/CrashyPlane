@@ -201,7 +201,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    func createRocks() {
+    func createRocks() { 
         //1
         let rockTexture = SKTexture(imageNamed: "rock")
         
